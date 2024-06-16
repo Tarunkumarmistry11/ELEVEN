@@ -1,0 +1,31 @@
+.navlinks a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+.Brand-name {
+    position: fixed;
+}
+  
+  @media (max-width: 900px) {
+    .navlinks {
+      background: #1FB89B;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 9999;
+      width: 90vw;
+      height: 100vh;
+      transform: translateX(100%);
+      transition: transform 400ms ease;
+    }
+  
+    .navlinks.active {
+      transform: translateX(0);
+    }
+  
+    .navlinks a {
+      color: #fff;
+    }
+  }
+  
